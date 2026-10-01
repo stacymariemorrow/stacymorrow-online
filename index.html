@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stacy Morrow</title>
+<meta name="description" content="Stacy Morrow. Projects, ventures, and how to get in touch.">
+<meta property="og:title" content="Stacy Morrow">
+<meta property="og:description" content="Projects, ventures, and how to get in touch.">
+<meta name="theme-color" content="#000000">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<!-- End Google Tag Manager -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#000;
+    --ink:#f5f5f7;
+    --muted:#a7a7b0;
+    --card:rgba(255,255,255,.055);
+    --card-hover:rgba(255,255,255,.10);
+    --edge:rgba(255,255,255,.14);
+    --edge-hover:rgba(255,255,255,.38);
+    --accent:#FF6700;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--bg);color:var(--ink);min-height:100%}
+  body{font-family:'Poppins',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+  #sparkle{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+  .vignette{position:fixed;inset:0;z-index:1;pointer-events:none;
+    background:radial-gradient(ellipse at 50% 30%,rgba(255,255,255,.05) 0%,rgba(0,0,0,0) 45%,rgba(0,0,0,.7) 100%)}
+
+  main{position:relative;z-index:2;max-width:560px;margin:0 auto;padding:72px 16px 56px;display:flex;flex-direction:column;align-items:center}
+
+  .name{font-size:clamp(30px,8vw,42px);letter-spacing:.14em;text-align:center;line-height:1.1}
+  .name .l{font-weight:300}
+  .name .b{font-weight:700}
+  .tag{margin-top:10px;font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);text-align:center}
+  .rule{width:56px;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.6),transparent);margin:28px 0 30px}
+
+  nav{width:100%;display:flex;flex-direction:column;gap:12px}
+  .link{position:relative;display:flex;align-items:center;justify-content:space-between;gap:14px;
+    width:100%;padding:16px 20px;border-radius:14px;text-decoration:none;color:var(--ink);
+    background:var(--card);border:1px solid var(--edge);
+    backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+    transition:background .25s,border-color .25s,transform .25s,box-shadow .25s;overflow:hidden}
+  .link::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.16) 50%,transparent 70%);
+    transform:translateX(-120%);transition:transform .8s ease}
+  .link:hover,.link:focus-visible{background:var(--card-hover);border-color:var(--edge-hover);transform:translateY(-2px);
+    box-shadow:0 8px 30px rgba(255,255,255,.06);outline:none}
+  .link:hover::after,.link:focus-visible::after{transform:translateX(120%)}
+  .link .t{display:flex;flex-direction:column;min-width:0}
+  .link .h{font-weight:600;font-size:15px;letter-spacing:.02em}
+  .link .s{font-size:12px;color:var(--muted);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .link svg{flex:0 0 auto;width:18px;height:18px;opacity:.55;transition:opacity .25s,transform .25s}
+  .link:hover svg{opacity:1;transform:translateX(2px)}
+
+  .group{margin:22px 0 2px;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);align-self:flex-start;padding-left:4px}
+
+  .link.cta{border-color:rgba(255,103,0,.55);background:rgba(255,103,0,.10)}
+  .link.cta:hover,.link.cta:focus-visible{border-color:var(--accent);background:rgba(255,103,0,.18);box-shadow:0 8px 34px rgba(255,103,0,.18)}
+  .link.cta svg{opacity:.9}
+
+  footer{margin-top:40px;font-size:11px;letter-spacing:.2em;color:#6d6d75;text-transform:uppercase}
+
+  @media (prefers-reduced-motion:reduce){
+    .link,.link::after,.link svg{transition:none}
+  }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<canvas id="sparkle" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+
+<main>
+  <h1 class="name"><span class="l">STACY</span> <span class="b">MORROW</span></h1>
+  <p class="tag">Strategy . Events . Ventures</p>
+  <div class="rule"></div>
+
+  <nav aria-label="Links">
+    <a class="link" data-id="pokemonhunt" data-type="project" href="https://pokemonhunt.world" target="_blank" rel="noopener">
+      <span class="t"><span class="h">Pokemon Hunt</span><span class="s">pokemonhunt.world</span></span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M9 7h8v8"/></svg>
+    </a>
+    <a class="link" data-id="backroomsyndicate" data-type="venture" href="https://backroomsyndicate.com" target="_blank" rel="noopener">
+      <span class="t"><span class="h">The Backroom Syndicate</span><span class="s">backroomsyndicate.com</span></span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M9 7h8v8"/></svg>
+    </a>
+    <a class="link" data-id="coolstorybro" data-type="venture" href="https://coolstorybro.blog" target="_blank" rel="noopener">
+      <span class="t"><span class="h">CoolStoryBro</span><span class="s">coolstorybro.blog</span></span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M9 7h8v8"/></svg>
+    </a>
+    <a class="link" data-id="stacymorrow_world" data-type="personal" href="https://stacymorrow.world" target="_blank" rel="noopener">
+      <span class="t"><span class="h">Stacy Morrow</span><span class="s">stacymorrow.world</span></span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M9 7h8v8"/></svg>
+    </a>
+    <a class="link" data-id="stacymorrow_study" data-type="personal" href="https://stacymorrow.study" target="_blank" rel="noopener">
+      <span class="t"><span class="h">Study</span><span class="s">stacymorrow.study</span></span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M9 7h8v8"/></svg>
+    </a>
+
+    <span class="group">Connect</span>
+    <a class="link" data-id="linkedin" data-type="social" data-noutm href="https://www.linkedin.com/in/stacymmorrow" target="_blank" rel="noopener">
+      <span class="t"><span class="h">LinkedIn</span><span class="s">linkedin.com/in/stacymmorrow</span></span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M9 7h8v8"/></svg>
+    </a>
+    <a class="link" data-id="paypal_donate" data-type="donation" data-noutm href="https://www.paypal.me/YOURHANDLE" target="_blank" rel="noopener">
+      <span class="t"><span class="h">Support My Work</span><span class="s">Donate via PayPal</span></span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M9 7h8v8"/></svg>
+    </a>
+    <a class="link cta" data-id="contact_email" data-type="contact" data-noutm href="mailto:stacy@backroomsyndicate.com?subject=Hello%20Stacy">
+      <span class="t"><span class="h">Get in Touch</span><span class="s">stacy@backroomsyndicate.com</span></span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+    </a>
+  </nav>
+
+  <footer>&copy; <span id="yr"></span> Stacy Morrow</footer>
+</main>
+
+<script>
+/* ---------- link tracking ---------- */
+(function(){
+  var UTM = { utm_source: location.hostname || 'linkhub', utm_medium: 'linkhub', utm_campaign: 'link_in_bio' };
+  window.dataLayer = window.dataLayer || [];
+
+  document.querySelectorAll('a.link').forEach(function(a){
+    // Tag own-domain outbound links with UTMs so the destination GA4 attributes the visit
+    if (!a.hasAttribute('data-noutm')) {
+      try {
+        var u = new URL(a.href);
+        Object.keys(UTM).forEach(function(k){ u.searchParams.set(k, UTM[k]); });
+        u.searchParams.set('utm_content', a.dataset.id);
+        a.href = u.toString();
+      } catch(e) {}
+    }
+    a.addEventListener('click', function(){
+      window.dataLayer.push({
+        event: 'link_click',
+        link_id: a.dataset.id,
+        link_label: a.querySelector('.h').textContent.trim(),
+        link_url: a.href.split('?')[0],
+        link_domain: a.protocol === 'mailto:' ? 'email' : a.hostname.replace(/^www\./, ''),
+        link_type: a.dataset.type
+      });
+    });
+  });
+  document.getElementById('yr').textContent = new Date().getFullYear();
+})();
+
+/* ---------- sparkle background ---------- */
+(function(){
+  var c = document.getElementById('sparkle'), x = c.getContext('2d');
+  var dpr = Math.min(window.devicePixelRatio || 1, 2), W, H, stars = [];
+  var still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var tints = ['255,255,255','255,255,255','255,255,255','220,230,255','255,236,214','236,220,255'];
+
+  function make(){
+    var n = Math.round((W * H) / 2600);
+    stars = [];
+    for (var i = 0; i < n; i++) {
+      var big = Math.random() < 0.06;
+      stars.push({
+        x: Math.random() * W, y: Math.random() * H,
+        r: big ? 1.1 + Math.random() * 1.2 : 0.3 + Math.random() * 0.8,
+        big: big,
+        p: Math.random() * Math.PI * 2,
+        s: 0.6 + Math.random() * 2.2,
+        dy: 0.02 + Math.random() * 0.06,
+        c: tints[(Math.random() * tints.length) | 0]
+      });
+    }
+  }
+  function size(){
+    W = window.innerWidth; H = window.innerHeight;
+    c.width = W * dpr; c.height = H * dpr;
+    x.setTransform(dpr, 0, 0, dpr, 0, 0);
+    make();
+    if (still) draw(0);
+  }
+  function draw(t){
+    x.clearRect(0, 0, W, H);
+    var ts = t / 1000;
+    for (var i = 0; i < stars.length; i++) {
+      var s = stars[i];
+      var a = still ? 0.6 : 0.25 + 0.75 * Math.pow((Math.sin(ts * s.s + s.p) + 1) / 2, 3);
+      if (!still) { s.y -= s.dy; if (s.y < -4) { s.y = H + 4; s.x = Math.random() * W; } }
+      x.fillStyle = 'rgba(' + s.c + ',' + a.toFixed(3) + ')';
+      x.beginPath(); x.arc(s.x, s.y, s.r, 0, Math.PI * 2); x.fill();
+      if (s.big && a > 0.7) {
+        var L = s.r * 6 * a;
+        x.strokeStyle = 'rgba(' + s.c + ',' + (a * 0.55).toFixed(3) + ')';
+        x.lineWidth = 0.6;
+        x.beginPath();
+        x.moveTo(s.x - L, s.y); x.lineTo(s.x + L, s.y);
+        x.moveTo(s.x, s.y - L); x.lineTo(s.x, s.y + L);
+        x.stroke();
+      }
+    }
+  }
+  function loop(t){ draw(t); requestAnimationFrame(loop); }
+  window.addEventListener('resize', size);
+  size();
+  if (!still) requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>
