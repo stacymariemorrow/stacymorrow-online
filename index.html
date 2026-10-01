@@ -51,22 +51,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   nav{width:100%;display:flex;flex-direction:column;gap:12px}
   .link{--c1:255,255,255;--c2:255,255,255;position:relative;display:flex;align-items:center;justify-content:space-between;gap:14px;
     width:100%;padding:16px 20px 16px 24px;border-radius:14px;text-decoration:none;color:var(--ink);
-    background:linear-gradient(120deg,rgba(var(--c1),.26) 0%,rgba(var(--c1),.08) 55%,rgba(var(--c2),.06) 100%);
-    border:1px solid rgba(var(--c2),.32);
+    background:linear-gradient(120deg,rgba(var(--c1),.62) 0%,rgba(var(--c1),.30) 60%,rgba(var(--c2),.16) 100%);
+    border:1px solid rgba(var(--c2),.55);
     backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
     transition:background .25s,border-color .25s,transform .25s,box-shadow .25s;overflow:hidden}
-  .link::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;
+  .link::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;
     background:linear-gradient(180deg,rgb(var(--c1)),rgb(var(--c2)))}
   .link::after{content:"";position:absolute;inset:0;pointer-events:none;
     background:linear-gradient(110deg,transparent 30%,rgba(var(--c2),.18) 50%,transparent 70%);
     transform:translateX(-120%);transition:transform .8s ease}
   .link:hover,.link:focus-visible{border-color:rgba(var(--c2),.75);transform:translateY(-2px);
-    background:linear-gradient(120deg,rgba(var(--c1),.40) 0%,rgba(var(--c1),.14) 55%,rgba(var(--c2),.10) 100%);
+    background:linear-gradient(120deg,rgba(var(--c1),.80) 0%,rgba(var(--c1),.42) 60%,rgba(var(--c2),.22) 100%);
     box-shadow:0 8px 34px rgba(var(--c1),.30);outline:none}
   .link:hover::after,.link:focus-visible::after{transform:translateX(120%)}
   .link .t{display:flex;flex-direction:column;min-width:0}
   .link .h{font-weight:600;font-size:15px;letter-spacing:.02em}
-  .link .s{font-size:12px;color:rgba(var(--c2),.72);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .link .s{font-size:12px;color:rgba(var(--c2),.9);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .link svg{flex:0 0 auto;width:18px;height:18px;color:rgb(var(--c2));opacity:.7;transition:opacity .25s,transform .25s}
   .link:hover svg{opacity:1;transform:translateX(2px)}
 
