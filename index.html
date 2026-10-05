@@ -72,6 +72,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .link .s{font-size:12px;color:rgba(var(--c2),.9);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .link svg{flex:0 0 auto;width:18px;height:18px;color:rgb(var(--c2));opacity:.7;transition:opacity .25s,transform .25s}
   .link:hover svg{opacity:1;transform:translateX(2px)}
+  .link .badge{display:inline-block;margin-left:8px;padding:2px 7px;border-radius:999px;font-size:9px;font-weight:600;letter-spacing:.18em;
+    text-transform:uppercase;vertical-align:2px;color:#001a17;background:rgb(var(--c2))}
 
   .group{margin:22px 0 2px;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);align-self:flex-start;padding-left:4px}
 
@@ -80,6 +82,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .csb{--c1:255,103,0;--c2:255,160,90}
   .world{--c1:126,58,242;--c2:196,165,255}
   .study{--c1:186,12,47;--c2:255,120,140}
+  .spektra{--c1:0,150,136;--c2:110,255,220}
   .linkedin{--c1:10,102,194;--c2:112,181,249}
   .paypal{--c1:255,20,147;--c2:255,140,205}
   .contact{--c1:200,204,216;--c2:255,255,255}
@@ -127,6 +130,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="t"><span class="h">Currently Studying</span><span class="s">What Stacy is reading at DU . stacymorrow.study</span></span>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M9 7h8v8"/></svg>
     </a>
+    <a class="link spektra" data-id="spektra" data-type="investment" href="https://www.spektra.fm/" target="_blank" rel="noopener">
+      <span class="t"><span class="h">Spektra<span class="badge">Raising</span></span><span class="s">My investment . Open to new private investors short term</span></span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17L17 7M9 7h8v8"/></svg>
+    </a>
 
     <span class="group">Connect</span>
     <a class="link linkedin" data-id="linkedin" data-type="social" data-noutm href="https://www.linkedin.com/in/stacymmorrow" target="_blank" rel="noopener">
@@ -153,7 +160,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   window.dataLayer = window.dataLayer || [];
 
   document.querySelectorAll('a.link').forEach(function(a){
-    // Tag own-domain outbound links with UTMs so the destination GA4 attributes the visit
+    // Tag outbound links with UTMs so the destination analytics attributes the visit
     if (!a.hasAttribute('data-noutm')) {
       try {
         var u = new URL(a.href);
@@ -163,10 +170,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       } catch(e) {}
     }
     a.addEventListener('click', function(){
+      var h = a.querySelector('.h');
       window.dataLayer.push({
         event: 'link_click',
         link_id: a.dataset.id,
-        link_label: a.querySelector('.h').textContent.trim(),
+        link_label: (h.firstChild ? h.firstChild.textContent : h.textContent).trim(),
         link_url: a.href.split('?')[0],
         link_domain: a.protocol === 'mailto:' ? 'email' : a.hostname.replace(/^www\./, ''),
         link_type: a.dataset.type
